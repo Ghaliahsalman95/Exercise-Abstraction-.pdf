@@ -23,12 +23,12 @@ private String author;
 
     @Override
     public double getDiscout() {
-        double getDiscout=0.3;
-
-        double net=getPrice();
-               net-= getPrice()*getDiscout;
-
-        return net;
+        double discout=0.3;
+return this.getPrice()-(this.getPrice()*discout);
+//        double net=getPrice();
+//               net-= getPrice()*discout;
+//
+//        return net;
     }
 
     @Override

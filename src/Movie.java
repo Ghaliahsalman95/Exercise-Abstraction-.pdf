@@ -15,11 +15,11 @@ public class Movie extends Product{
 
     @Override
     public double getDiscout() {
-        double getDiscout=0.2;
-        double net=getPrice();
-        net-= getPrice()*getDiscout;
+        double discout=0.2;
+//        double net=getPrice();
+//        net-= getPrice()*discout;
+return this.getPrice()-(this.getPrice()*discout);
 
-        return net;
     }
 
     @Override
